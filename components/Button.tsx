@@ -5,26 +5,21 @@ interface ButtonProps {
     large?: boolean;
     onClick: () => void;
     disabled?: boolean;
-    outline?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({label, secondary, fullWidth, large, onClick, disabled, outline}) => {
+const Button: React.FC<ButtonProps> = ({label, secondary, fullWidth, large, onClick, disabled}) => {
     return (
         <button 
         disabled={disabled}
         onClick={onClick}
         className={
-            `disabled:opacity-70 disabled:cursor-not-allowed rounded-full font-semibold hover:opacity-80 transition border-2
+            `text-black font-semibold border-black disabled:opacity-70 disabled:cursor-not-allowed rounded-full font-semibold hover:opacity-80 transition border-2
             ${fullWidth ? 'w-full' : 'w-fit'}
-            ${secondary ? 'bg-black' : 'bg-slate-600'}
+            ${secondary ? 'bg-white' : 'bg-black'}
             ${secondary ? 'text-black' : 'text-white'}
-            ${secondary ? 'border-black' : 'border-slate-600'}
-            ${large ? 'text-xl' : 'text-md'}
+            ${secondary ? 'border-black' : 'border-black'}
             ${large ? 'px-5' : 'px-4'}
             ${large ? 'py-3' : 'py-2'}
-            ${outline ?? 'bg-transparent'}
-            ${outline ?? 'border-white'}
-            ${outline ?? 'text-white'}
             `
         }>{label}</button>
     )

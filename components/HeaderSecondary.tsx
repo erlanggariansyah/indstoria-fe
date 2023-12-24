@@ -1,6 +1,6 @@
 import useLoginModal from "@/hooks/useLoginModal";
 import { useCallback } from "react";
-import { FaFeather, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 const HeaderSecondary = () => {
     const loginModal = useLoginModal();
@@ -15,7 +15,7 @@ const HeaderSecondary = () => {
                 <FaUser size={24} color="white" />
             </div>
             <div onClick={handleOnClickPost} className="relative flex px-4 py-2 mr-6 rounded-full bg-neutral-800 hover:bg-opacity-90 w-full cursor-pointer transition">
-                <p className="text-center font-semibold text-white text-[20px]">Tulis sesuatu...</p>
+                <p className="text-center font-light antialiased text-white text-[20px]">Tulis sesuatu...</p>
             </div>
         </div>
     )

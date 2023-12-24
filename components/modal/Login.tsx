@@ -3,8 +3,10 @@ import { useCallback, useState } from "react";
 import Input from "../Input";
 import Modal from "../Modal";
 import useRegisterModal from "@/hooks/useRegisterModal";
+import { useRouter } from "next/router";
 
 const Login = () => {
+    const router = useRouter();
     const loginModal = useLoginModal();
     const registerModal = useRegisterModal();
     
@@ -16,6 +18,7 @@ const Login = () => {
         try {
             setIsLoading(true);
 
+            router.push('/home');
             loginModal.onClose();
         } catch(error) {
             console.error(error);
@@ -38,7 +41,7 @@ const Login = () => {
 
     const footer = (
         <div className="text-neutral-400 text-center mt-4">
-            <p>Pertama kali kesini? <span onClick={onToggle} className="text-white cursor-pointer hover:underline">Bikin akun</span></p>
+            <p className="font-light">Pertama kali kesini? <span onClick={onToggle} className="text-white cursor-pointer hover:underline">Buat akun</span></p>
         </div>
     );
 
