@@ -36,6 +36,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onSubmit, title, body, f
                     <div className="h-full h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
                         {/* FOOTER */}
                         <div className="flex items-center justify-between mt-10 mx-10 rounded-t">
+                            <img className="w-10 h-15" src="../indstoria-dark-tr.png" alt="logo"/>
+                            <p className="text-white text-xl mr-2">|</p>
                             <h3 className="text-3xl font-medium text-white">{title}</h3>
                             <button className="p-1 ml-auto border-0 text-white hover:opacity-70 transition" onClick={handleClose}>
                                 <AiOutlineClose size={20} />

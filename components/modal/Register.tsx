@@ -44,10 +44,10 @@ const Register = () => {
 
     const body = (
         <div className="flex flex-col gap-4">
-            <Input placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading}/>
-            <Input placeholder="Nama" onChange={(e) => setName(e.target.value)} value={name} disabled={isLoading}/>
-            <Input placeholder="Username" onChange={(e) => setUsername(e.target.value)} value={username} disabled={isLoading}/>
-            <Input placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading}/>
+            <Input title="Email" placeholder="Silahkan ketik email kamu" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading}/>
+            <Input title="Nama" placeholder="Silahkan ketik nama kamu" onChange={(e) => setName(e.target.value)} value={name} disabled={isLoading}/>
+            <Input title="Username" placeholder="Silahkan ketik username kamu" onChange={(e) => setUsername(e.target.value)} value={username} disabled={isLoading}/>
+            <Input title="Password" placeholder="Silahkan ketik password kamu" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading}/>
         </div>
     )
 
