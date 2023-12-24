@@ -22,9 +22,9 @@ const Index = () => {
         <img className="object-cover h-screen w-full" src="/index-leftbackground.jpg" alt="" />
       </div>
       <div className="text-center max-lg:col-span-2">
-        <div>  
-          <p className="font-normal text-2xl max-md:text-xl">Privet, lyudi!</p>
-          <p className="font-light text-lg max-md:text-sm">Di sini, dihadapan patung The Motherland Calls, kamu diajak untuk<br />bergabung dalam perjalanan sejarah yang luar biasa.</p>
+        <div className="mr-6 ml-6">
+          <p className="font-normal text-2xl max-md:text-xl">Privet, kamerad!</p>
+          <p className="font-light text-lg max-md:text-sm">Di sini, dihadapan patung The Motherland Calls, kamu diajak<br />untuk bergabung dalam perjalanan sejarah yang luar biasa.</p>
         </div>
         <div className="grid grid-cols-2 p-4 max-md:p-2 justify-center items-center">
           <div className="text-center">
