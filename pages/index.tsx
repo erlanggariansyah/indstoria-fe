@@ -19,14 +19,12 @@ const Index = () => {
     <>
     <div className="bg-white h-screen grid grid-cols-2 justify-center items-center">
       <div className="text-center max-lg:hidden">
-        <Suspense fallback={<div className="h-sreen w-full animate-pulse bg-neutral-500"/>}>
-          <img className="object-cover h-screen w-full" src="/index-leftbackground.jpg" alt="background-image" />
-        </Suspense>
+        <img className="object-cover h-screen w-full" src="/index-leftbackground.webp" alt="background-image" />
       </div>
       <div className="text-center max-lg:col-span-2">
         <div className="mr-6 ml-6">
-          <p className="font-normal text-2xl max-md:text-xl antialiased">Privet, kamerad!</p>
-          <p className="font-light text-lg max-md:text-sm antialiased">Di sini, dihadapan patung The Motherland Calls, kamu diajak<br />untuk bergabung dalam perjalanan sejarah yang luar biasa.</p>
+          <p className="font-normal text-2xl max-md:text-xl antialiased">Selamat datang,</p>
+          <p className="font-light text-lg max-md:text-sm antialiased">Selangkah lebih dekat dengan sejarah di Indstoria.</p>
         </div>
         <div className="grid grid-cols-2 p-4 max-md:p-2 justify-center items-center">
           <div className="text-center">
