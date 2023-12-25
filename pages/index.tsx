@@ -19,7 +19,7 @@ const Index = () => {
     <>
     <div className="bg-white h-screen grid grid-cols-2 justify-center items-center">
       <div className="text-center max-lg:hidden">
-        <Suspense fallback={<div className="h-sreen w-full animate-pulse"/>}>
+        <Suspense fallback={<div className="h-sreen w-full animate-pulse bg-neutral-500"/>}>
           <img className="object-cover h-screen w-full" src="/index-leftbackground.jpg" alt="background-image" />
         </Suspense>
       </div>
