@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
-import { useCallback } from "react";
+import { Suspense, useCallback } from "react";
 
 const Index = () => {
   const registerModal = useRegisterModal();
@@ -28,7 +28,9 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-2 p-4 max-md:p-2 justify-center items-center">
           <div className="text-center">
-            <img src="/indstoria-light-tr.png" alt="logo"/>
+            <Suspense fallback={<div className="animate-pulse"/>}>
+              <img src="/indstoria-light-tr.png" alt="logo"/>
+            </Suspense>
           </div>
           <div className="text-left pt-6 max-md:pt-4 mr-6">
             <div className={`pt-4 pb-4 max-md:pt-2 max-md:pb-2 ${registerModal.isOpen ? 'animate-pulse' : ''}`}>

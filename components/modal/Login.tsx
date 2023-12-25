@@ -34,8 +34,8 @@ const Login = () => {
 
     const body = (
         <div className="flex flex-col gap-4">
-            <Input title="Email" placeholder="Silahkan ketik email kamu" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading}/>
-            <Input title="Password" placeholder="Silahkan ketik password kamu" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading}/>
+            <Input title="Email" type="email" placeholder="Silahkan ketik email kamu" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading}/>
+            <Input title="Password" type="password" placeholder="Silahkan ketik password kamu" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading}/>
         </div>
     )
 
