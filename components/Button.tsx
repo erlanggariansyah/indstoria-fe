@@ -13,11 +13,12 @@ const Button: React.FC<ButtonProps> = ({label, secondary, fullWidth, large, onCl
         disabled={disabled}
         onClick={onClick}
         className={
-            `text-black font-semibold border-black disabled:opacity-70 disabled:cursor-not-allowed rounded-full font-semibold hover:opacity-80 transition border-2
+            `text-black font-semibold border-black disabled:opacity-70 disabled:cursor-not-allowed rounded-full font-semibold transition border-2
             ${fullWidth ? 'w-full' : 'w-fit'}
             ${secondary ? 'bg-white' : 'bg-black'}
             ${secondary ? 'text-black' : 'text-white'}
             ${secondary ? 'border-black' : 'border-black'}
+            ${secondary ? 'hover:bg-neutral-200' : 'hover:opacity-80'}
             ${large ? 'px-5' : 'px-4'}
             ${large ? 'py-3' : 'py-2'}
             `
