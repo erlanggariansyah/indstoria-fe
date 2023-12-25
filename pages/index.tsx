@@ -19,7 +19,9 @@ const Index = () => {
     <>
     <div className="bg-white h-screen grid grid-cols-2 justify-center items-center">
       <div className="text-center max-lg:hidden">
-        <img className="object-cover h-screen w-full" src="/index-leftbackground.jpg" alt="" />
+        <Suspense fallback={<div className="h-sreen w-full animate-pulse"/>}>
+          <img className="object-cover h-screen w-full" src="/index-leftbackground.jpg" alt="background-image" />
+        </Suspense>
       </div>
       <div className="text-center max-lg:col-span-2">
         <div className="mr-6 ml-6">
@@ -28,9 +30,7 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-2 p-4 max-md:p-2 justify-center items-center">
           <div className="text-center">
-            <Suspense fallback={<div className="animate-pulse"/>}>
               <img src="/indstoria-light-tr.png" alt="logo"/>
-            </Suspense>
           </div>
           <div className="text-left pt-6 max-md:pt-4 mr-6">
             <div className={`pt-4 pb-4 max-md:pt-2 max-md:pb-2 ${registerModal.isOpen ? 'animate-pulse' : ''}`}>
