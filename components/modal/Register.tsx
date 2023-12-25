@@ -14,6 +14,7 @@ const Register = () => {
     const [ name, setName ] = useState("");
     const [ username, setUsername ] = useState("");
     const [ password, setPassword ] = useState("");
+    const [ passwordConfirmation, setPasswordConfirmation ] = useState("");
     const [ isLoading, setIsLoading ] = useState(false);
 
     const onSubmit = useCallback(async () => {
@@ -47,7 +48,10 @@ const Register = () => {
             <Input title="Email" type="email" placeholder="Silahkan ketik email kamu" onChange={(e) => setEmail(e.target.value)} value={email} disabled={isLoading}/>
             <Input title="Nama" type="text" placeholder="Silahkan ketik nama kamu" onChange={(e) => setName(e.target.value)} value={name} disabled={isLoading}/>
             <Input title="Username" type="text" placeholder="Silahkan ketik username kamu" onChange={(e) => setUsername(e.target.value)} value={username} disabled={isLoading}/>
+            <div className="grid grid-cols-2 max-md:grid-cols-1 ">
             <Input title="Password" type="password" placeholder="Silahkan ketik password kamu" onChange={(e) => setPassword(e.target.value)} value={password} disabled={isLoading}/>
+            <Input title="Konfirmasi Password" type="password" placeholder="Silahkan konfirmasi password" onChange={(e) => setPasswordConfirmation(e.target.value)} value={passwordConfirmation} disabled={isLoading}/>
+            </div>
         </div>
     )
 
